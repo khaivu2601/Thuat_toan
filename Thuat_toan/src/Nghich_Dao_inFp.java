@@ -10,7 +10,7 @@ public class Nghich_Dao_inFp {
         long a= sc.nextLong();
         if(a>p){
             System.out.println("nhập lại a nhỏ hơn p");
-             a= sc.nextLong();
+            a= sc.nextLong();
         }
         long u=a,v=p;
         int x1=1,x2=0;

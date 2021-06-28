@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 import static java.lang.Math.pow;
@@ -15,7 +14,7 @@ public class Cong_tren_Fp {
     }
 
     public static int Tinh(int c[],int a[],int b[],int L[],int n,int w) {
-       int epsilon=0;
+        int epsilon=0;
         int  e= (int) pow(2,w);
         for( int i=n-1; i>=0; i--)
         {
@@ -61,22 +60,22 @@ public class Cong_tren_Fp {
         int e = (int) pow(2, w);
         if (k == 1) {
 
-        int m= (int) Math.round(Math.log(p)/Math.log(2));
-        int q= m/w;
-        if(q%10 == 0){
-            q=q;
-        }else
-            q=q+1;
+            int m= (int) Math.round(Math.log(p)/Math.log(2));
+            int q= m/w;
+            if(q%10 == 0){
+                q=q;
+            }else
+                q=q+1;
 
-        System.out.println("mảng của số nguyên p :");
-        for(int i =t-1 ; i>=0;i--)
-        {
-            int z = (int) pow(2,w*i);
-            L[i]= (int) (p/z);
-            p = p%z;
-            System.out.printf("%d\t",L[i]);
-        }
-        System.out.println("\n");
+            System.out.println("mảng của số nguyên p :");
+            for(int i =t-1 ; i>=0;i--)
+            {
+                int z = (int) pow(2,w*i);
+                L[i]= (int) (p/z);
+                p = p%z;
+                System.out.printf("%d\t",L[i]);
+            }
+            System.out.println("\n");
             int[] l = new int[n];
             System.out.println("\n");
             for (int i = 0, j = t - 1; i < t; i++, j--) {
@@ -97,7 +96,6 @@ public class Cong_tren_Fp {
             }
             for (int i = 0; i < t; i++)
                 System.out.print(h[i] + "  ");
-            }
+        }
     }
-
 }

@@ -18,10 +18,10 @@ public class Multiprecision_addition {
             b[i]=sc.nextInt();
         }
     }
-   public static void Tinh(int c[],int a[],int b[],int n,int e) {
-int epsilon =0;
+    public static void Tinh(int c[],int a[],int b[],int n,int e) {
+        int epsilon =0;
         for (int i = 0; i < n; i++) {
-int w=(a[i]+b[i]+epsilon);
+            int w=(a[i]+b[i]+epsilon);
             if(a[i]+b[i]+epsilon<e)
             {
                 epsilon=1;
@@ -34,11 +34,11 @@ int w=(a[i]+b[i]+epsilon);
             }
 
             System.out.printf("%d \t",c[i]);
-       }
+        }
 
-   }
+    }
 
-   public static void main(String[] args) {
+    public static void main(String[] args) {
         int n=4;
         int[]a=new int[n];
         int[]b=new int[n];
@@ -50,8 +50,9 @@ int w=(a[i]+b[i]+epsilon);
         NhapA(a,n);
         NhapB(b,n);
         int e= (int) pow(2,w);
-       System.out.println(e);
+        System.out.println(e);
         Tinh(c,a,b,n,e);
 
     }
 }
+

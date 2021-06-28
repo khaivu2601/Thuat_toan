@@ -42,7 +42,7 @@ public class Tru_tren_Fp {
             }
         }
         System.out.println("))");
-return epsilon;
+        return epsilon;
     }
 
     public static void main(String[] args) {
@@ -70,13 +70,13 @@ return epsilon;
         }else
             System.out.printf("(%d",k);
         System.out.printf("(");
-            for (int i = 0; i <n ; i++) {
-                if(i==n-1){
-                    System.out.printf("%d",c[i]);
-                }else {
-                    System.out.printf("%d,", c[i]);
-                }
+        for (int i = 0; i <n ; i++) {
+            if(i==n-1){
+                System.out.printf("%d",c[i]);
+            }else {
+                System.out.printf("%d,", c[i]);
             }
+        }
         System.out.println("))");
     }
 }

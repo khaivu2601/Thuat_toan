@@ -49,4 +49,3 @@ public class boyer_moore {
         search(x, y);
     }
 }
-
