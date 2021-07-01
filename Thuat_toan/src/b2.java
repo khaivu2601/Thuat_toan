@@ -24,7 +24,7 @@ public class b2 extends BPL{
                         j=j+1;
                     }
                     if(y!=n-1){
-                        System.out.println("SNT");
+                        System.out.println("hợp số");
                     }
                 }
 
