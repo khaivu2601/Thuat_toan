@@ -11,7 +11,7 @@ public class Millerbin extends BPL{
             int y = BPL(a, r, n);
             if (y != 1 && y != n - 1) {
                 int j=1;
-                while (j<=0 && y!=n-1){
+                while (j<=1 && y!=n-1){
                     y=BPL(y,2,n);
                     if(y==1){
                         System.out.println("hợp số");
