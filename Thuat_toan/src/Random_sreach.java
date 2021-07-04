@@ -14,7 +14,7 @@ public class Random_sreach extends Millerbin{
         if(n%7==0){
             System.out.println("again!!!");
             n=SinhSo();
-            System.out.println("số sinh ngẫu nhiên là "+n);
+            System.out.println("số sinh ngẫu nhiên nlà "+n);
         }
         System.out.println("số sinh ngẫu nhiên là "+n);
         Miller(n,t);
