@@ -20,8 +20,8 @@ public class KMP {
     }
     public static void TimKiem(char[] x, char[] y) {
         int[] kmpNext = KMP(x);
-        int i = 0;// the position of character in x
-        int m = 0;// the beginning of the current match in y
+        int i = 0;
+        int m = 0;
         while (m <= y.length - x.length) {
             if (x[i] == y[m + i]) {
                 i++;
