@@ -4,8 +4,8 @@ import static java.lang.Math.*;
 
 public class Pollards_Rho {
     static Scanner sc= new Scanner(System.in);
-    public static int gcd(int a, int b){
-        int c=0;
+    public static long gcd(long a, long b){
+        long c=0;
         a=abs(a);
         while (b>0){
             c=a%b;
@@ -14,12 +14,12 @@ public class Pollards_Rho {
         }
         return a;
     }
-    public static void Tinh(int a,int b,int n){
+    public static void Tinh(long a,long b,long n){
         while (true){
             a=(a*a+1)%n;
             b=(b*b+1)%n;
             b=(b*b+1)%n;
-            int d=gcd(a-b,n);
+            long d=gcd(a-b,n);
 
             if (d>1&&d<n) {
                 System.out.printf("thành công !!! %d",d);
@@ -33,7 +33,7 @@ public class Pollards_Rho {
         }
     }
     public static void main(String[] args) {
-        int a=2,b=2;
+        long a=2,b=2;
         System.out.println("nhập n");
         int n=sc.nextInt();
         Tinh(a,b,n);

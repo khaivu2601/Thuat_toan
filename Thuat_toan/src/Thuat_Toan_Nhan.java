@@ -11,7 +11,7 @@ public class Thuat_Toan_Nhan {
             a=a%z;
         }
         for (int i = t-1; i >= 0; i--) {
-            System.out.printf("%d",arr[i]);
+            System.out.printf("%d \t",arr[i]);
         }
         System.out.println("\n");
     }

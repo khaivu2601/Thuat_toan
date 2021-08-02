@@ -34,6 +34,7 @@ public class boyer_moore {
             i += shift;
         }
     }
+
     public static boolean cmp(char[] x, char[] y, int y1) {
         for (int i = 0; i < x.length; i++) {
             if (x[i] != y[y1++]) {
@@ -43,9 +44,9 @@ public class boyer_moore {
         return true;
     }
     public static void main(String[] args) {
-        char[] x = "khaivu".toCharArray();
-        char[] y = "ho ten toi la khaivu".toCharArray();
-        System.out.print("vị trí xuất hiện trong văn bản của xâu mẫu là: ");
+        char[] x = "am".toCharArray();
+        char[] y = "hom nay la thu nam khong phai ram".toCharArray();
+        System.out.print("vị trí xuất hiện trong văn bản của xâu mẫu là:\n ");
         search(x, y);
     }
 }
